@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Login Pages</title>
+</head>
+
+<body>
+
+    <div class="login-cont">
+
+        <div class="header" id="login-text">
+            <h3>Welcome Back! Dear</h3>
+            <p>Do you have an account?</p>
+            <button class="sidebar-btn" id="reg-btn">Register</button>
+        </div>
+
+        <div class="login" id="login-page">
+            <h3>Login</h3>
+            <form action="./login.php">
+
+                <div class="input-group">
+                    <input class="login-inputs" type="text" name="username" placeholder="Username" id="name">
+                    <i id="user-icon" class="fa-solid fa-user icon user"></i>
+                </div>
+                <div class="input-group">
+                    <input class="login-inputs" type="password" name="pass" placeholder="Password" id="pass">
+                    <i id="pass-icon" class="fa-solid fa-lock icon"></i>
+                </div>
+                <p class="forgot-pera">Fogot Password?</p>
+                <button type="submit" class="login-btn">Login</button>
+
+            </form>
+        </div>
+
+        <div class="reg" id="registration-page">
+            <h3>Create Account</h3>
+
+            <form action="./signup.php">
+                <input class="reg-inputs" name="name" required id="reg-name" placeholder="Username" type="text">
+                <i id="reg-icon-user" class="fa-solid fa-user reg-icon"></i>
+                <input class="reg-inputs" required id="reg-email" placeholder="Email" name="email" type="email">
+                <i id="reg-icon-email" class="fa-solid fa-envelope reg-icon"></i>
+                <input class="reg-inputs" required id="reg-pass" placeholder="Password" name="pass" type="password">
+                <i id="reg-icon-pass" class="fa-solid fa-lock reg-icon"></i>
+            </form>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+
+        <div class="reg-text" id="registration-page-text">
+            <h1>Hello Friend!</h1>
+            <p>Hey! Already part of us?</p>
+            <button id="signin-btn">Sign in</button>
+
+
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

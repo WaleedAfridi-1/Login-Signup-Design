@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgb(237, 245, 252), rgb(168, 210, 250), rgb(40, 158, 232));
+}
+
+.login-cont {
+    width: 55%;
+    height: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    width: 50%;
+    height: 100%;
+    color: #ffffff;
+    background-color: dodgerblue;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.9s;
+}
+
+.header>h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.header>p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#reg-btn {
+    width: 130px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: none;
+    color: #222;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.3s;
+}
+
+.header>button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #f1ecec;
+    box-shadow: 0px 16px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.login {
+    width: 50%;
+    height: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transition: all ease 0.9s;
+    transform: translateX(340px);
+}
+
+.login>h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.login>form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    gap: 13px;
+}
+
+.login-inputs {
+    width: 100%;
+    height: 25px;
+    padding: 22px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(240, 239, 239);
+    border: none;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #656464;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: #b4b1b1;
+}
+
+#user-icon {
+    position: absolute;
+    top: 135px;
+    left: 300px;
+    z-index: 2;
+    transition: all ease 0.9s;
+    transform: translateX();
+}
+
+#pass-icon {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    transition: all ease 0.9s;
+    transform: translateX();
+    z-index: 2;
+}
+
+.forgot-pera {
+    color: #656464;
+    text-align: center;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.3s;
+}
+
+.login-btn:hover {
+    background-color: rgb(0, 109, 218);
+}
+
+/* Registration Page Area  */
+.reg {
+    width: 52%;
+    height: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all ease 0.9s;
+}
+
+.reg>form {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    padding-left: 20px;
+    gap: 13px;
+    position: relative;
+}
+
+.reg-inputs {
+    width: 100%;
+    height: 25px;
+    padding: 22px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(240, 239, 239);
+    border: none;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.reg-icon {
+    position: absolute;
+    top: 0;
+    left: 310px;
+    z-index: 2;
+    transition: all ease 0.3s;
+}
+
+#reg-icon-user {
+    top: 20px;
+}
+
+#reg-icon-email {
+    top: 85px;
+}
+
+#reg-icon-pass {
+    top: 150px;
+}
+
+.reg>h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #222
+}
+
+#signup-btn {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.3s;
+}
+
+#signup-btn:hover {
+    background-color: rgb(0, 109, 218);
+}
+
+/* registration page right side  */
+.reg-text {
+    background-color: dodgerblue;
+    width: 46%;
+    padding: 30px 10px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform: translateX(100%);
+    transition: all ease 0.9s;
+}
+
+.reg-text>h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.reg-text>p {
+    color: #f1ecec;
+}
+
+#signin-btn {
+    width: 130px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: none;
+    color: #222;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+#signin-btn:hover {
+    transform: translateY(3px) scale(1.05);
+}
